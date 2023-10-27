@@ -1,1 +1,1 @@
-# goit-markup-hw-05 by Daisy Milan
+# goit-markup-hw-06 by Daisy Milan
