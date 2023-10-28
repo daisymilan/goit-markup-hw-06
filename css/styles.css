@@ -8,6 +8,8 @@
     --LIGHT-SLATE : #8E8F99;
     --OCEAN : #404BBF;
     --DAIRY: #FCFCFC;
+    --NAVY-BLUE-modal: #2E2F4266;
+
 
 }
 
@@ -236,6 +238,80 @@ button.modal-close-btn.data-modal-close {
     width: 24px;
     height: 24px;
     margin:24px 24px 0 0;
+}
+
+.modal-heading {
+    padding-top: 72px;
+    padding-bottom: 16px;
+    color: var(--NAVY-BLUE);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.service-label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+    padding-left: 24px;
+    
+}
+
+.input-label {
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.service-icon {
+    position: absolute;
+    top: 55%;
+    left: 40px;
+    fill: black;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+}
+
+
+.service-input {
+    padding:12px 40px;
+    border-radius: 4px;
+    border: 1px solid var(--NAVY-BLUE-modal);
+    width: 360px;
+    height: 40px;
+    transition: 250ms;
+    transition-property: color, border-color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-input:focus+.service-icon,
+.service-input:hover+.service-icon {
+    fill: var(--IRIS);
+}
+
+.service-input:hover {
+    border: 1px solid var(--IRIS);
+}
+
+.service-input-textarea {
+    width: 360px;
+    height: 120px;
+    border: 1px solid var(--NAVY-BLUE-modal);
+    border-radius: 4px;
+    transition: 250ms;
+    transition-property: color, border-color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-input-textarea:focus , 
+.service-input-textarea:hover {
+    border: 1px solid var(--IRIS);
+}
+.service-input-textarea::placeholder {
+    padding-top: 8px;
+    padding-left: 16px;
 }
 
     /* SECTION 1- FEATURES */
@@ -513,6 +589,53 @@ footer .logo {
     background-color: aquamarine;
 }
 
+.footer-subscribe {
+    padding-left: 80px;
+}
+
+.subscribe {
+    color: var(--WHITE);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    padding-bottom: 16px;
+}
+
+.footer-email-text {
+    background-color: var(--NAVY-BLUE);
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--WHITE);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+
+}
+
+.footer-email-text::placeholder{
+    color: var(--WHITE);
+    font-size: 12px;
+}
+
+.subscribe-form {
+    display: inline-flex;
+    gap: 24px;
+}
+
+.subscribe-button {
+    font-size: 16px;
+    width: 165px;
+    height: 40px;
+    background-color: var(--IRIS);
+    color: var(--WHITE);
+    border-radius: 4px;
+    padding: 8px 24px;
+    display: flex;
+    gap: 16px;
+}
 
 
 
