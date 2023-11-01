@@ -316,6 +316,7 @@ button.modal-close-btn.data-modal-close {
 .service-input-textarea:hover {
     border: 1px solid var(--IRIS);
 }
+
 .service-input-textarea::placeholder {
     padding-top: 8px;
     padding-left: 16px;
@@ -325,15 +326,46 @@ button.modal-close-btn.data-modal-close {
     font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.48px;
+}
 
-
+.agree-checkbox {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 23px;
+    opacity: 0;
 }
 
 .modal-checkbox {
-    display: flex; 
-    justify-content: center;
-    gap: 8px;
+    fill:none;
+    margin-right: 8px;
+    border: 2px solid var(--LIGHT-SLATE);
+    border-radius: 2px;
+    transition: 250ms;
+    transition-property: border-color, background-color, fill;
+    transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+}
+
+.service-agree .agree-checkbox:focus + .modal-checkbox,
+.service-agree .agree-checkbox:checked:focus + .modal-checkbox {
+    outline: 2px solid var(--NAVY-BLUE);
+
+}
+
+.service-agree .agree-checkbox:checked + .modal-checkbox{
+    background: var(--IRIS);
+    border-color: var(--IRIS);
+    fill: var(--WHITE);
+    outline: none;
+    stroke: var(--WHITE);
+    stroke-width: 0.2;
+}
+
+.service-agree{
+    display: flex;
+    align-items: center;
     padding-top: 16px;
+    margin-left: 8px;
     text-transform: none;
     font-family: Roboto;
     font-size: 12px;
